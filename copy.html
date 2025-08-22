@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CropDirect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>CropDirect</header>
+
+<div class="container">
+    <h1>CropDirect</h1>
+    <p class="tagline">Capture, upload, or describe your crop with our easy-to-use tool.</p>
+    <button class="btn" id="startBtn">Get Started</button>
+
+    <div class="options" id="optionsContainer">
+        <button class="option-btn" id="cameraOption">📷 Take Photo</button>
+        <button class="option-btn" id="galleryOption">🖼 Upload from Gallery</button>
+        <button class="option-btn" id="textOption">✏️ Describe Your Crop</button>
+
+        <video id="video" autoplay style="display:none;"></video>
+        <button id="captureBtn" style="display:none;">Capture Photo</button>
+        <img id="capturedImage" style="display:none;" />
+
+        <input type="file" id="galleryInput" accept="image/*" style="display:none;">
+        <div id="textContainer" style="display:none;">
+            <textarea id="cropDescription" placeholder="Describe your crop..."></textarea>
+            <button class="btn" onclick="submitDescription()">Submit Description</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

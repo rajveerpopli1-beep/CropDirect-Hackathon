@@ -1,0 +1,107 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+       font-family: Arial, sans-serif;
+       background: linear-gradient(135deg, #667eea, #764ba2);
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       color: #333;
+   }
+
+   header {
+       position: absolute;
+       top: 20px;
+       left: 20px;
+       font-size: 28px;
+       font-weight: bold;
+       color: white;
+   }
+
+   .container {
+       text-align: center;
+       background: rgba(255, 255, 255, 0.95);
+       padding: 40px;
+       border-radius: 24px;
+       max-width: 600px;
+       width: 90%;
+       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+   }
+
+   .tagline {
+       font-size: 18px;
+       color: #666;
+       margin: 20px 0;
+   }
+
+   .btn {
+       background: #2a9d8f;
+       color: #fff;
+       border: none;
+       padding: 15px 30px;
+       font-size: 18px;
+       border-radius: 50px;
+       cursor: pointer;
+       transition: 0.3s;
+   }
+
+   .btn:hover {
+       background: #21867a;
+   }
+
+   .options {
+       margin-top: 20px;
+       display: none;
+       flex-direction: column;
+       gap: 15px;
+   }
+
+   .option-btn {
+       padding: 12px;
+       border-radius: 12px;
+       border: 1px solid #2a9d8f;
+       background: white;
+       cursor: pointer;
+       font-size: 16px;
+       transition: 0.3s;
+   }
+
+   .option-btn:hover {
+       background: #f0f0f0;
+   }
+
+   #video,
+   #capturedImage {
+       width: 100%;
+       max-width: 400px;
+       border-radius: 12px;
+       margin-top: 10px;
+   }
+
+   textarea {
+       width: 100%;
+       min-height: 120px;
+       padding: 12px;
+       border-radius: 12px;
+       border: 2px solid #2a9d8f;
+       margin-top: 10px;
+       resize: vertical;
+       font-size: 16px;
+   }
+
+   #captureBtn {
+       margin-top: 10px;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 8px;
+       background: #667eea;
+       color: white;
+       cursor: pointer;
+       font-size: 16px;
+   }
