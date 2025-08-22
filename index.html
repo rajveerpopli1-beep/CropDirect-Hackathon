@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CropDirect</title>
 <link rel="stylesheet" href="style.css">
+<title>CropDirect</title>
 </head>
 <body>
 
@@ -16,9 +16,15 @@
     <button class="btn" id="startBtn">Get Started</button>
 
     <div class="options" id="optionsContainer">
-        <button class="option-btn" id="cameraOption">📷 Take Photo</button>
-        <button class="option-btn" id="galleryOption">🖼 Upload from Gallery</button>
-        <button class="option-btn" id="textOption">✏️ Describe Your Crop</button>
+        <button class="option-btn" id="cameraOption">
+            <span class="option-icon">📷</span> Take Photo
+        </button>
+        <button class="option-btn" id="galleryOption">
+            <span class="option-icon">🖼</span> Upload from Gallery
+        </button>
+        <button class="option-btn" id="textOption">
+            <span class="option-icon">✏️</span> Describe Your Crop
+        </button>
 
         <video id="video" autoplay style="display:none;"></video>
         <button id="captureBtn" style="display:none;">Capture Photo</button>
@@ -33,5 +39,4 @@
 </div>
 </body>
 <script src="script.js"></script>
-
 </html>
